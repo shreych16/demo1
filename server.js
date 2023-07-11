@@ -18,7 +18,7 @@ app.use(function (req, res, next) {
 var port = process.env.PORT || 2410;
 app.listen(port, () => console.log(`Node app listening on port ${port}!`));
 
-let { customersData } = require("./Task-7 data");
+let { customersData } = require("./data.js");
 
 app.get("/customers/:id", function (req, res) {
   let id = req.params.id;
